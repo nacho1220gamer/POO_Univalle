@@ -6,8 +6,8 @@ using  namespace std;
 class Comida
 {
   private:
-    string nombre;
-    int saturacionComida;
+    	string nombre;
+    	int saturacionComida;
   public:
 	Comida(string auxNombre, int auxSaturacion);
 	string getNombre();
