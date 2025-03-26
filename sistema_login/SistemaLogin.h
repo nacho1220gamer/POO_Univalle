@@ -23,6 +23,13 @@
     Fecha: Marzo 2025
     Contribuidor: Victor Bucheli
 
+    comentario:
+    -se usan las siguientes librerías:
+    - <string>: Para manejar nombres de usuario y contraseñas.
+    se investigó sus funcionalidades en: https://learn.microsoft.com/es-es/cpp/standard-library/string?view=msvc-170
+    - <vector>: Para almacenamiento de datos si se amplía la funcionalidad.
+    se investigó sus funcionalidades en: https://learn.microsoft.com/es-es/cpp/standard-library/vector-class?view=msvc-170
+
 */
 #ifndef _SISTEMALOGIN_H_
 #define _SISTEMALOGIN_H_

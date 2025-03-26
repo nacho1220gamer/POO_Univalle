@@ -1,5 +1,5 @@
 /*
-    Clase: Banco
+    Clase: SistemaLogin
     Curso: Fundamentos de Programación Orientada a Objetos (FPOO)
     Universidad del Valle
 
@@ -8,21 +8,27 @@
     Clase: SistemaLogin
 
     Responsabilidades:
-        - Abstraer el comportamiento de un Banco dentro de un banco su información y sus operaciones
-        - El Banco puede crear clientes
-        - El Banco puede crear cuentas
-        - El Banco puede calcular el promedio del salod de las cuentas
-        - El Banco puede imprimir los saldos
-    
+        - Administrar el sistema de inicio de sesión.
+        - Almacenar y gestionar usuarios con autenticación segura.
+        - Proteger las contraseñas mediante hashing.
+        - Permitir el inicio y cierre de sesión de los usuarios.
+        - Permitir el cambio y recuperación de contraseñas.
+
     Colaboradores:
-        - Cuenta
-        - Clientes
+        - SistemaLogin
 
 
-    Autor: Ignacio Henao 
-    Correo: ignacio.henao@correounivalle.edu.co
+    Autor: [Ignacio Henao, Juan Camilo Ramos, Samuel Saldaña, Juan Manuel Muñoz ]
+    Correo: [ignacio.henao@correounivalle.edu.co, juan.ramos.hoyos@correounivalle.edu.co, saldana.samuel@correounivalle.edu.co, juan.munoz.delgado@correounivalle.edu.co ]
     Fecha: Marzo 2025
-    Contribuidor: Victor Bucheli
+
+    comentario:
+    se usan las siguientes librerías:
+    - <string>: Para manejar nombres de usuario y contraseñas.
+    se investigó sus funcionalidades en: https://learn.microsoft.com/es-es/cpp/standard-library/string?view=msvc-170
+    - <vector>: Para almacenamiento de datos si se amplía la funcionalidad.
+    se investigó sus funcionalidades en: https://learn.microsoft.com/es-es/cpp/standard-library/vector-class?view=msvc-170
+    - Se importo la clase "SistemaLogin.h"
 
 */
 
