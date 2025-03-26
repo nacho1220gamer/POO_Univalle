@@ -40,7 +40,9 @@ Sistema::Sistema(string nombre_sistema)
 }
 void Sistema::accesoAdministrador(SistemaLogin sistema_login, string nombre_usuario, string contraseña) 
 {
+    // Inicia sesión en el sistemaLogin
     sistema_login.iniciar_sesion(nombre_usuario, contraseña);
+    // Comprueba que este en_sesion y si es así muestra un mensaje de acceso concedido.
     if(sistema_login.getSesion()) 
     {
         cout << "Acceso a administrador concedido." << endl;
@@ -51,6 +53,7 @@ void Sistema::accesoAdministrador(SistemaLogin sistema_login, string nombre_usua
 }
 void Sistema::accesoModuloRegistro(SistemaLogin sistema_login) 
 {
+    // Comprueba que este en_sesion y si es así muestra un mensaje de acceso concedido.
     if(sistema_login.getSesion()) 
     {
         cout << "Acceso al modulo de registro concedido." << endl;
