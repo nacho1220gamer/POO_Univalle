@@ -1,20 +1,29 @@
-
 /*
-    Proyecto: Banco
-    Curso: Fundamentos de Programación Orientada a Objetos (FPOO)
-    Universidad del Valle
-
-    Descripción:
-    Este proyecto busca desarrollar un proyecto completo en FPOO analisis, diseño e implementación
-    programar un banco
-
-    Autor: Victor Bucheli 
-    Correo: victor.bucheli@correounivalle.edu.co
-    Fecha: Marzo 2025
-    Contribuidor: Victor Bucheli
+  *
+  *  @file main.cpp
+  * 
+  *  @brief Sistema de gestión de accesos para módulos administrativos
+  * 
+  *  @details Implementa el control de acceso mediante:}
+  *  - Instancia objetos de la clase Sistema.
+  *  - Instancia objetos de la clase SistemaLogin.
+  *
+  *  @author [Ignacio Henao, Juan Camilo Ramos, Samuel Saldaña, Juan Manuel Muñoz]
+  * 
+  *  @mail [ignacio.henao@correounivalle.edu.co, juan.ramos.hoyos@correounivalle.edu.co , 
+  *  saldana.samuel@correounivalle.edu.co, juan.munoz.delgado@correounivalle.edu.co]
+  * 
+  *  @date 2025-03-25
+  * 
+  *  @version 1.0*
+  *  
+  *  @comentario: Se utilizaron las librerías/archivos:
+  *  - <string> para manipulación de cadenas de texto
+  *  - "Sistema.h" y "SistemaLogin.h" para instanciar objetos
+  *  - Se investigo en la pagina: https://en.cppreference.com/w/ sobre como usar las librerias
+  *
 */
 #include<iostream>
-#include<vector>
 #include "SistemaLogin.h"
 #include "Sistema.h"
 using namespace std;
@@ -25,7 +34,8 @@ int main(){
     Sistema sistema("Sistema");
     sistema_login.iniciar_sesion("ignacioHenao", "nachohenao2007");
     sistema_login.cambiar_contraseña("nachohenao2007", "nacho1234");
-    sistema.accesoAdministrador(sistema_login);
+    sistema.accesoAdministrador(sistema_login, "ignacioHenao", "nacho1234");
+    sistema.accesoModuloRegistro(sistema_login);
     sistema_login.olvidar_contraseña("nachohenao2007");
     sistema_login.cerrar_sesion();
     sistema.accesoModuloRegistro(sistema_login);

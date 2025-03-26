@@ -38,7 +38,7 @@ class Sistema {
         string nom_sistema;
     public:
         Sistema(string nombre_sistema);
-        void accesoAdministrador(SistemaLogin sistema_login);
+        void accesoAdministrador(SistemaLogin sistema_login, string nombre_usuario, string contraseña);
         void accesoModuloRegistro(SistemaLogin sistema_login);
 };
 
