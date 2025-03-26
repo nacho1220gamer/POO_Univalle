@@ -1,18 +1,15 @@
 /*
-    Clase: SistemaLogin
+    Clase: Sistema
     Curso: Fundamentos de Programación Orientada a Objetos (FPOO)
     Universidad del Valle
 
     Información CRC:
     
-    Clase: SistemaLogin
+    Clase: Sistema
 
     Responsabilidades:
-        - Administrar el sistema de inicio de sesión.
-        - Almacenar y gestionar usuarios con autenticación segura.
-        - Proteger las contraseñas mediante hashing.
-        - Permitir el inicio y cierre de sesión de los usuarios.
-        - Permitir el cambio y recuperación de contraseñas.
+        - Acceder al modulo de administrador.
+        - Acceder al modulo de registro.
 
     Colaboradores:
         - SistemaLogin
@@ -24,10 +21,8 @@
 
     comentario:
     se usan las siguientes librerías:
-    - <string>: Para manejar nombres de usuario y contraseñas.
+    - <string>: Para manejar strings.
     se investigó sus funcionalidades en: https://learn.microsoft.com/es-es/cpp/standard-library/string?view=msvc-170
-    - <vector>: Para almacenamiento de datos si se amplía la funcionalidad.
-    se investigó sus funcionalidades en: https://learn.microsoft.com/es-es/cpp/standard-library/vector-class?view=msvc-170
     - Se importo la clase "SistemaLogin.h"
 
 */
