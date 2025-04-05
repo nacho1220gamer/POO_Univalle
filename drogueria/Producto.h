@@ -26,8 +26,8 @@ private:
     int cantidadStock;  // Cantidad en stock
     std::vector<Categoria*> categorias;
 public:
-    Producto(int id, std::string nombre, double precio, int cantidadStock);
-    int getId() const;
+    Producto(std::string id, std::string nombre, double precio, int cantidadStock);
+    std::string getId() const;
     std::string getNombre() const;
     double getPrecio() const;
     int getCantidadStock() const;

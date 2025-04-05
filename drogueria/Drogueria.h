@@ -22,11 +22,11 @@
 #include "Cliente.h"
 
 class Drogueria {
-private:
+  private:
     std::vector<Producto> productos;  // Productos disponibles en la droguería
     std::vector<Cliente> clientes;  // Clientes registrados
 
-public:
+  public:
     Drogueria();
 
     void registrarProducto(Producto auxProducto);
